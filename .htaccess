@@ -1,0 +1,14 @@
+# Bloquear acceso directo a archivos sensibles
+<FilesMatch "^(config|src)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Prevenir listado de directorios
+Options -Indexes
+
+# Redireccionar todas las solicitudes al index.php si es necesario
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]

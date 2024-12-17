@@ -1,0 +1,127 @@
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    object-fit: cover;
+}
+
+.initial-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.profile-container:hover .profile-dropdown {
+    display: block;
+}
+
+.profile-dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #4a5568;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-dropdown-item:hover {
+    background-color: #f7fafc;
+}
+
+.profile-dropdown-item i {
+    margin-right: 10px;
+    color: #718096;
+}
+
+/* Estilo del botón de iniciar sesión */
+.login-button {
+    background-color: #ff9900;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #ff9900;
+}
+
+.login-button i {
+    margin-right: 8px;
+}
+
+/* Desplegar el menú de opciones */
+.login-button-container {
+    position: relative;
+}
+
+.login-dropdown {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.login-button-container:hover .login-dropdown {
+    display: block;
+}
+
+.login-dropdown-item {
+    padding: 8px 12px;
+    color: #4a5568;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+}
+
+.login-dropdown-item:hover {
+    background-color: #f7fafc;
+}
+
+.login-dropdown-item i {
+    margin-right: 10px;
+    color: #718096;
+}

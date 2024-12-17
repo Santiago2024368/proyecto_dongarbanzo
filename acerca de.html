@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Don Garbanzo</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/logo.png" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+<style>
+  .img-item{
+    width: 190px;
+    height: 200px;
+    border-radius: 8%;
+  } 
+
+  .page-header {
+    background-image: url('img/carousel-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 50px 0;
+}
+
+/* Overlay oscuro */
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de opacidad */
+}
+
+/* Asegúrate de que el contenido esté por encima del overlay */
+.page-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+    .logo{
+    width: 350px;
+    height: 50;
+
+    }
+</style>
+    <body>
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            
+
+            <div class="container-fluid">
+                <img src="img/logo don garbanzo-.png" alt="Logotipo" class="logo"href="index.html">
+            <a href="index.html"></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.php" class="nav-item nav-link active">Inicio</a>
+                        <a href="admin/menu.php" class="nav-item nav-link">Menu</a>
+                        <a href="acerca de.html" class="nav-item nav-link active">Acerca de</a>
+                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        <div class="nav-item dropdown">
+                    
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+        
+        
+        <!-- Page Header Start -->
+        <div class="page-header mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Acerca de</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+              <!-- About Start --> 
+              <div class="about">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-img">
+                                
+                            <video  width="250px" height="250px" controls>
+                                <source src="video/videoportada.mp4" type="video/mp4">
+                                tu navegador no es apto para mp4
+                            </video>
+    
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-content">
+                                <div class="section-header">
+                                    <h2>Quienes somos</h2>
+                                </div>
+                                <div class="about-text">
+                                   <p>En Dongarbanzo, somos apasionados de la repostería y la creatividad en la cocina. Nos especializamos en la elaboración de pasteles únicos y deliciosos que combinan tradición y originalidad. Cada pastel que ofrecemos está hecho con ingredientes de la más alta calidad, cuidando cada detalle para brindar una experiencia dulce y memorable. Creemos en compartir momentos especiales a través del sabor, y en hacer de cada bocado una celebración de la vida.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
+            
+            
+            <!-- Video Modal Start-->
+            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>        
+                            <!-- 16:9 aspect ratio -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- Video Modal End -->
+        
+    <!-- Food Start -->
+<div class="food mt-0">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Cuatro imágenes en una sola fila -->
+            <div class="col-md-3">
+                <div class="food-item">
+                    <img src="img/malecon.jpeg" alt="cede1" class="img-item">
+                    <h2>Malecon</h2>
+                    <p class="centered-text">Te invitamos a visitar a nuestras Cedes. Aquí no solo encontrarás pasteles, sino una experiencia única llena de sabor y creatividad.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="food-item">
+                    <img src="img/Caobos.jpeg" alt="cede1" class="img-item">
+                    <h2>Caobos</h2>
+                    <p class="centered-text">En Dongarbanzo, cada pastel es una obra de arte creada con amor, ingredientes de la mejor calidad y una pizca de magia.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="food-item">
+                    <img src="img/Ceiba.jpg" alt="cede2" class="img-item">
+                    <h2>Ceiba</h2>
+                    <p class="centered-text">En Dongarbanzo, cada pastel cuenta una historia de sabor, donde cada detalle está pensado para ofrecerte una experiencia inolvidable.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="food-item">
+                    <img src="img/Ceiba.jpg" alt="cede" class="img-item">
+                    <h2>Trapiches</h2>
+                    <p class="centered-text">En Dongarbanzo, Sabemos que cada ocasión merece un toque especial, nada lo hace mejor que un pastel hecho con amor. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Food End -->
+
+
+
+       
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+         <!-- Contact Start -->
+         <div class="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Contacta con nosotros</p>
+                    <h2> Cualquier pregunta</h2>
+                </div>
+                <div class="row align-items-center contact-information">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Direccion</h3>
+                                <p>Dirección TV 4 #4E-83Barrio  La Ceiba</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Telefono</h3>
+                                <p>+57 321 9556968</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Hotmail</h3>
+                                <p>dongarbanz01</p>
+                                <p>@hotmai.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-share"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Siguenos</h3>
+                                <div class="contact-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row contact-form">
+                    <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sco!4v1730497001279!5m2!1sen!2sco!6m8!1m7!1sD6FTZp-HuWg3sDemkbHXsA!2m2!1d7.894836214773207!2d-72.49579537086538!3f126.76794784260346!4f3.1751422498123674!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+                    </div>
+                    <div class="col-md-6">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="control-group">
+                                <input type="text" class="form-control" id="name" placeholder="Tu Nombre" required="required" data-validation-required-message="Please enter your name" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control" id="email" placeholder="Correo" required="required" data-validation-required-message="Please enter your email" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control" id="subject" placeholder="Sujeto" required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control" id="Mensaje" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn custom-btn" type="submit" id="sendMessageButton">Enviar Mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+         
+
+        <!--.................................................................................................
+        ....................................................................................................
+        ........................................    PIE DE PAGNA INICIO    .................................
+        ....................................................................................................
+        .....................................................................................................--> 
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Success and Error Message Styles */
+        .success-message {
+            animation: fadeIn 0.5s ease-out, pulse 1.5s infinite;
+            background-color: rgba(34, 197, 94, 0.1);
+            border: 2px solid #22c55e;
+            color: #22c55e;
+        }
+        .error-message {
+            animation: fadeIn 0.5s ease-out;
+            background-color: rgba(239, 68, 68, 0.1);
+            border: 2px solid #ef4444;
+            color: #ef4444;
+        }
+    </style>
+<footer class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Contact Information -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">Nuestra Dirección</h2>
+                <div class="space-y-3">
+                    <p class="flex items-center">
+                        <i class="fas fa-map-marker-alt mr-3" style="color: #fbaf32;"></i>
+                        Dirección TV 4 #4E-83 Barrio La Ceiba
+                    </p>
+                    <p class="flex items-center">
+                        <i class="fas fa-phone-alt mr-3" style="color: #fbaf32;"></i>
+                        +57 321 9556968
+                    </p>
+                    <p class="flex items-center">
+                        <i class="fas fa-envelope mr-3" style="color: #fbaf32;"></i>
+                        dongarbanz01@hotmail.com
+                    </p>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="mt-6 flex space-x-4">
+                    <a href="https://www.facebook.com/@dongarbanzo.pasabocas/" style="color: #fbaf32;" class="hover:opacity-80 transition duration-300">
+                        <i class="fab fa-facebook-f text-2xl"></i>
+                    </a>
+                    <a href="#" style="color: #fbaf32;" class="hover:opacity-80 transition duration-300">
+                        <i class="fab fa-youtube text-2xl"></i>
+                    </a>
+                    <a href="#" style="color: #fbaf32;" class="hover:opacity-80 transition duration-300">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">Boletín</h2>
+                <p class="text-gray-600 mb-6">
+                    ¡Gracias por visitar Dongarbanzo! Mantente al tanto de nuestras últimas novedades, recetas y consejos culinarios.
+                </p>
+
+                <form 
+                    id="newsletterForm"
+                    action="https://formsubmit.co/dongarbanzo93@gmail.com" 
+                    method="POST"
+                    class="space-y-4"
+                >
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input 
+                            type="text" 
+                            name="name" 
+                            placeholder="Nombre (opcional)" 
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2" 
+                            style="border-color: #fbaf32; focus:ring-color: #fbaf32;"
+                        >
+                        <input 
+                            type="email" 
+                            name="email" 
+                            placeholder="Email" 
+                            required
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2" 
+                            style="border-color: #fbaf32; focus:ring-color: #fbaf32;"
+                        >
+                    </div>
+                    <textarea 
+                        name="message" 
+                        placeholder="Mensaje (opcional)" 
+                        rows="3"
+                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2" 
+                        style="border-color: #fbaf32; focus:ring-color: #fbaf32;"
+                    ></textarea>
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="">
+
+                    <div 
+                        id="formStatus" 
+                        class="text-center p-3 rounded-md mb-4 hidden"
+                    ></div>
+
+                    <button 
+                        type="submit" 
+                        class="w-full py-2 rounded-md text-white transition duration-300" 
+                        style="background-color: #fbaf32; hover:opacity-80;"
+                    >
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+    document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const form = e.target;
+        const formStatus = document.getElementById('formStatus');
+        const submitButton = form.querySelector('button[type="submit"]');
+        
+        // Deshabilitar botón durante el envío
+        submitButton.disabled = true;
+        submitButton.classList.add('opacity-50', 'cursor-not-allowed');
+        
+        // Enviar formulario
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            // Mostrar mensaje de éxito
+            formStatus.textContent = '¡Gracias por tu opinión! Pronto nos pondremos en contacto.';
+            formStatus.classList.remove('hidden');
+            formStatus.classList.add('success-message');
+            
+            // Resetear formulario
+            form.reset();
+            
+            // Ocultar mensaje después de 3 segundos
+            setTimeout(() => {
+                formStatus.classList.add('hidden');
+                formStatus.classList.remove('success-message');
+                submitButton.disabled = false;
+                submitButton.classList.remove('opacity-50', 'cursor-not-allowed');
+            }, 3000);
+        })
+        .catch(error => {
+            // Mostrar mensaje de error
+            formStatus.textContent = 'Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo.';
+            formStatus.classList.remove('hidden');
+            formStatus.classList.add('error-message');
+            
+            // Habilitar botón nuevamente
+            submitButton.disabled = false;
+            submitButton.classList.remove('opacity-50', 'cursor-not-allowed');
+            
+            // Ocultar mensaje de error después de 3 segundos
+            setTimeout(() => {
+                formStatus.classList.add('hidden');
+                formStatus.classList.remove('error-message');
+            }, 3000);
+        });
+    });
+    </script>
+
+    <!--.................................................................................................
+        ....................................................................................................
+        ........................................    PIE DE PAGNA FIN    .................................
+        ....................................................................................................
+        .....................................................................................................-->
+
+        
+
+       
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
